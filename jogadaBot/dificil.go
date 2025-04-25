@@ -27,7 +27,7 @@ func JogadaNivelDificil(tabuleiro map[string][]string, jogador1 string, jogador2
 		return jogadaBot
 	}
 
-	jogadaBot = bordaVazia(tabuleiro, numeroUtilizado)
+	jogadaBot = bordaVazia(numeroUtilizado)
 	if jogadaBot != -1 && !utils.JaUtilizado(jogadaBot, numeroUtilizado) {
 		return jogadaBot
 	}
@@ -99,7 +99,7 @@ func cantoVazio(tabuleiro map[string][]string) int {
 	return -1
 }
 
-func bordaVazia(tabuleiro map[string][]string, numeroUtilizado []int) int {
+func bordaVazia(numeroUtilizado []int) int {
 	bordas := []int{2, 4, 6, 8}
 
 	var jogada int
