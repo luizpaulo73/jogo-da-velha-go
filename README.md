@@ -1,4 +1,4 @@
-# Jogo Da Velha
+# Jogo Da Velha 🎮
 
 ## Projeto Realizado para estudo da sintaxe da linguagem go (golang)
 
